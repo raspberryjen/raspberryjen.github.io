@@ -13,10 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
+title: moments
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   moments
+url: "https://rj.github.io/"
+baseurl: ""
 twitter_username: username
 github_username: username
 minimal_mistakes_skin: default
@@ -30,9 +32,6 @@ permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-url: "https://rj.github.io/"
-baseurl: ""
 
 include:
   - _pages
