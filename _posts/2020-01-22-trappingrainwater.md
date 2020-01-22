@@ -1,9 +1,10 @@
------------------
+---
 title:Trapping Rain Water
+categories:leetcode
 
------------------
+---
 
-[https://leetcode.com/submissions/detail/296313531/](https://leetcode.com/submissions/detail/296313531/){/blank}
+[https://leetcode.com/submissions/detail/296313531/](https://leetcode.com/submissions/detail/296313531/){:target="_blank"}
 
 ```java
 class Solution {
