@@ -1,6 +1,6 @@
 ---
-title:Trapping Rain Water
-categories:leetcode
+title: Trapping Rain Water
+categories: leetcode
 
 ---
 
