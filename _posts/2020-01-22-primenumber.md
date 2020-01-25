@@ -1,6 +1,7 @@
 ---
 title: Count Primes
 categories: leetcode
+
 ---
 
 [https://leetcode.com/submissions/detail/296390247/](https://leetcode.com/submissions/detail/296390247/){:target="_blank"}
