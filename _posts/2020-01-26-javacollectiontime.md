@@ -1,7 +1,9 @@
 ---
 title: Java Collections performance
 categories: java
-tags: time,collections
+tags: 
+-time complexity
+-collections
 
 ---
 
