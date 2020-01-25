@@ -15,10 +15,10 @@
 # in the templates via {{ site.myvariable }}.
 title: moments
 email:
-description: Jennifer's moments
+description: "Jennifer's moments"
 url: "https://rj.github.io"
 baseurl:
-github_username: username
+github_username: raspberryjen
 minimal_mistakes_skin: default
 search: true
 
@@ -56,9 +56,9 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
+  name   : "Jennifer"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "Jennifer's moments"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
