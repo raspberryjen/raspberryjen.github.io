@@ -3,7 +3,7 @@ title: Climbing Stairs
 categories: leetcode
 tags:
 - fibonacci
-
+- DP
 ---
 
 [https://youtu.be/d0oiDbuSr-I](https://youtu.be/d0oiDbuSr-I){:target="_blank"}
