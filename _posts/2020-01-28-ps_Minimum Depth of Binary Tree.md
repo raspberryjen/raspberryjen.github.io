@@ -28,23 +28,27 @@ using stack
 ```java
 class Solution {
     public int minDepth(TreeNode root) {
-        if (root==null) return 0;
+        if(root == null)
+           return 0;
         Stack<TreeNode> stack=new Stack();
+        Stack<Integer> levels=new Stack();
+        stack.push(root);
+        levels.push(1);
         int min=Integer.MAX_VALUE;
-        TreeNode node=root, prev=null;
-        while(node!=null || !stack.isEmpty()) {
-            if (node!=null) {
-                stack.push(node);
-                node=node.left;
-            } else {
-                TreeNode pn=stack.peek();
-                if (pn.right!=null && pn.right != prev) {
-                    node=pn.right;
-                } else {
-                    if (pn.left==null && pn.right==null)
-                        min=Math.min(min, stack.size());
-                    prev=stack.pop();
-                }
+        while(!stack.isEmpty()) {
+            TreeNode node=stack.pop();
+            int level=levels.pop();
+            
+            if (node.left==null && node.right==null)
+                min=Math.min(min, level);
+            
+            if (node.left!=null) {
+                stack.push(node.left);
+                levels.push(level+1);
+            }
+            if (node.right!=null) {
+                stack.push(node.right);
+                levels.push(level+1);
             }
         }
         return min;
