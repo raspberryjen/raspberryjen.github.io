@@ -4,8 +4,17 @@ categories: leetcode
 tags:
 - Trie
 
-
 ---
+
+search recursively with increased word position
+```
+if (ch=='.') {
+    for (TrieNode n:node.getLinks())
+        if (search(word, pos+1, n)) return true;
+} else {
+    return search(word, pos+1, node.get(ch));
+}
+```        
 
 [https://leetcode.com/submissions/detail/298090799/](https://leetcode.com/submissions/detail/298090799/){:target="_blank"}
 
