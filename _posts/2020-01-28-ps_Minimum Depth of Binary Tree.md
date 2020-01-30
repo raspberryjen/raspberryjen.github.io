@@ -1,9 +1,11 @@
 ---
 title: Minimum Depth of Binary Tree
-categories: leetcode
+categories: 
+- leetcode
+- algorithm
 tags:
 - DFS
-
+- BFS
 ---
 
 DFS
