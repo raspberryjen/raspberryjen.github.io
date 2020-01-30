@@ -51,6 +51,7 @@ class Solution {
 
 BFS
 Iterative
+[https://leetcode.com/submissions/detail/298650588/](https://leetcode.com/submissions/detail/298650588/){:target="_blank"}
 ```java
 class Solution {
     public int maxAreaOfIsland(int[][] grid) {
