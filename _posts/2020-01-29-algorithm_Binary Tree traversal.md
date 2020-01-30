@@ -1,6 +1,8 @@
 ---
 title: Binary Tree traversal
-categories: leetcode
+categories: 
+- leetcode
+- algorithm
 tags:
 - Binary Tree
 
