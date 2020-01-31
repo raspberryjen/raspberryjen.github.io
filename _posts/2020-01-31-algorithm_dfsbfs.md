@@ -1,6 +1,6 @@
 ---
 title: DFS/BFS
-categries: algorithm
+categories: algorithm
 tags:
 - DFS
 - BFS
