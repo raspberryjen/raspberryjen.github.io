@@ -7,21 +7,24 @@ tags:
 
 ---
 
+https://youtu.be/Bt11jaoqt_Y
+backtracking = recursion + termiation check
+
 [](){:target="_blank"}
 
 ```java
 class Solution {
     List<String> ans=new ArrayList();
     int N=0;
-    private void generate(int left, int right, String str) {
-        if (left==N && right==N) {
+    private void generate(int openCnt, int closeCnt, String str) {
+        if (openCnt==N && closeCnt==N) {
             ans.add(str);
             return;
         }
-        if (left<N)
-            generate(left+1, right, str+"(");
-        if (left>right)
-            generate(left, right+1, str+")");
+        if (openCnt<N)
+            generate(openCnt+1, closeCnt, str+"(");
+        if (openCnt>closeCnt)
+            generate(openCnt, closeCnt+1, str+")");
     }
     
     public List<String> generateParenthesis(int n) {
