@@ -5,7 +5,7 @@ tags: design
 
 ---
 
-[](){:target="_blank"}
+[https://leetcode.com/submissions/detail/304478557/](https://leetcode.com/submissions/detail/304478557/){:target="_blank"}
 
 ```java
 class TicTacToe {
@@ -55,6 +55,8 @@ class TicTacToe {
  */
 ```
 
+my solution
+[https://leetcode.com/submissions/detail/304412432/](https://leetcode.com/submissions/detail/304412432/){:target="_blank"}
 
 ```java
 class TicTacToe {
