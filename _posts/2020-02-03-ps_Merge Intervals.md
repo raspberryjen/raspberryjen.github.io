@@ -71,3 +71,26 @@ public int[][] merge(int[][] intervals) {
     return ans;
 }
 '''
+
+6ms
+[https://leetcode.com/submissions/detail/373102438/](https://leetcode.com/submissions/detail/373102438/){:target="_blank"}
+'''java
+int[][] ans = new int[][] {};
+        // List<int[]> list = new LinkedList<>(Arrays.asList(intervals));
+        // list.sort((e1, e2) -> e1[0] - e2[0]);
+        // dump(intervals);
+        List<int[]> list = new LinkedList<>();
+        Arrays.sort(intervals, (e1,e2)->e1[0]-e2[0]);
+        for (int[] in : intervals) {
+            if (list.isEmpty()) list.add(in);
+            int[] last = list.get(list.size()-1);
+            if (in[0] > last[1]) {
+                list.add(in);
+            } else if (in[0] <= last[1] && last[1] < in[1]) {
+                last[1] = in[1];
+            }
+        }
+        // dump(list);
+        ans = list.toArray(ans);
+        return ans;
+'''
