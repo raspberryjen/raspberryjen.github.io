@@ -40,3 +40,34 @@ class Solution {
     }
 }
 ```
+
+50ms
+[https://leetcode.com/submissions/detail/373095546/](https://leetcode.com/submissions/detail/373095546/){:target="_blank"}
+'''java
+public int[][] merge(int[][] intervals) {
+ if (intervals.length <= 1)
+        return intervals;
+    int[][] ans = new int[][] {};
+    List<int[]> list = new LinkedList<>(Arrays.asList(intervals));
+    list.sort((e1, e2) -> e1[0] - e2[0]);
+    // dump(list);
+    List<int[]> ansl = new LinkedList<>();
+    ansl.add(list.get(0));
+
+    int i=1;
+    while (i<list.size()) {
+        int[] c = list.get(i);
+        int idx=ansl.size()-1;
+        int[] p = ansl.get(idx);
+        if (c[0] > p[1]) {
+            ansl.add(c);
+        } else if (c[0] <= p[1] && p[1] < c[1]) {
+            p[1] = c[1];
+        }
+        i++;
+    }
+    // dump(ansl);
+    ans = ansl.toArray(ans);
+    return ans;
+}
+'''
