@@ -86,8 +86,8 @@ int[][] ans = new int[][] {};
             int[] last = list.get(list.size()-1);
             if (in[0] > last[1]) {
                 list.add(in);
-            } else if (in[0] <= last[1] && last[1] < in[1]) {
-                last[1] = in[1];
+            } else {        //else if (in[0] <= last[1] && last[1] < in[1])
+                last[1] = Math.max(last[1],in[1]);
             }
         }
         // dump(list);
